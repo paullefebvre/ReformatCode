@@ -1,3 +1,6 @@
+> This script was originally created by Julian Samphire (see the license).
+> I have not modified it except to remove or fix broken URLs in this readme.
+> -- Paul
 
 # Reformat Code Script
 
@@ -33,20 +36,15 @@ A reformat code script for the [Xojo IDE](https://www.xojo.com/) that has some u
 
 ## TL;DR - Where do I go for help?
 
-If you read through the following and need a little help, please:
+If you read through the following and need a little help, there is a forum topic that might be helpful:
 
-Watch the video - https://youtu.be/IAVjh-xiO0w
-
-Latest features update video - https://youtu.be/-JPjQ4Gn1bM
-
-Ask questions on the forum - https://forum.xojo.com/47389-xojo-ide-reformat-code-script
+https://forum.xojo.com/47389-xojo-ide-reformat-code-script
 
 **If nothing happenes make sure you have "Apply standardize format after ending line" turned on under:**
 
 **Options->Coding.**
 
 ## Getting Started
-([Jump to to this point in the video](https://youtu.be/IAVjh-xiO0w?t=9s))
 
 The easiest way to install the script is to directly download it and place it into the Scripts folder of your Xojo installation.
 
@@ -63,7 +61,6 @@ Start the IDE back up and move the cursor around your code!
 **Options->Coding.**
 
 ## **Settings**
-([Jump to to this point in the video](https://youtu.be/IAVjh-xiO0w?t=2m58s))
 
 Defaults are shown in parentheses `( )`  
 Booleans can be `true,yes,1` or `false,no,0`
@@ -182,7 +179,6 @@ This message is added to the end of one of the messages shown above when there i
 Reports debug information (see `System.DebugLog` for more information). This setting is off by default, setting to 1 will show some debug information, 2 will show detailed debug information.
 
 ## Code Replacements
-([Jump to to this point in the video](https://youtu.be/IAVjh-xiO0w?t=13m22s))
 
 There are a set of replacements that happen when moving onto a new line which aid with coding:
 
@@ -203,7 +199,6 @@ If you have come from other languages it will also help you with:
     If a != 1       if a <> 1
     
 ## Macros
-([Jump to to this point in the video](https://youtu.be/IAVjh-xiO0w?t=14m44s))
 
 Macros have been implemented by replacing specially formatted strings with other content that is stored in the current project. As you move off the line containing the macro it is converted.
 
@@ -224,9 +219,8 @@ Macros was originally designed with automatic insertion of multi line macros, ho
 *Note: If you set your macro modules “Include In” settings (under advanced settings) to all unchecked then none of the constants you place inside will be included in your built application.*
 
 ## Windows Declares
-([Jump to to this point in the video](https://youtu.be/IAVjh-xiO0w?t=20m53s))
 
-The ReformatCode script will attempt to resolve windows declares for you so you don’t need to look up the correct Xojo types. Just enter the variable type with a w_ before it and it will be converted to its relevant Xojo type when you move off the line. The list of conversion is taken from my [blog](https://blog.samphire.net/2017/01/22/windows-to-xojo-data-type-conversion/). If you see a * appear, it means that you should visit my blog and read the additional notes associated with that type.
+The ReformatCode script will attempt to resolve windows declares for you so you don’t need to look up the correct Xojo types. Just enter the variable type with a w_ before it and it will be converted to its relevant Xojo type when you move off the line. If you see a * appear, it means that you should visit my blog and read the additional notes associated with that type.
 
 For example, to add SetWindowLong type the following:
 
@@ -292,10 +286,8 @@ Rather than clicking the Copy button, select from the start of the code snippet 
 
 The alias is always added ready so you can change the name of the call before Lib to anything you need ensuring that the correct call is used within the Alias quotes. To complete the process, double click REPLACE_ME and paste in the name of the dll from the bottom of the MSDN page under the section Requirements, DLL.
 
-**If this is all a bit confusing, just watch this [video](https://youtu.be/-JPjQ4Gn1bM) for a quick rundown of how to do it, once you get the hang of it, it makes working with declares a LOT quicker.**
+You will still need to make sure that you correctly use ByRef before your parameter names.
 
-You will still need to make sure that you correctly use ByRef before your parameter names. See the notes at the top of my [blog](https://blog.samphire.net/2017/01/22/windows-to-xojo-data-type-conversion/) about this.
+If you have questions, there is a Xojo forum [thread](https://forum.xojo.com/47389-xojo-ide-reformat-code-script) thread regarding this script that might be helpful.
 
-If you have any questions, feature requests or bug reports, please visit to the Xojo forum [thread](https://forum.xojo.com/47389-xojo-ide-reformat-code-script) regarding this script.
-
-More information regarding Custom Code Reformatting in the Xojo IDE can be found [here](https://docs.xojo.com/UserGuide:Custom_Code_Reformatting).
+More information regarding Custom Code Reformatting in the Xojo IDE can be found [here](https://documentation.xojo.com/topics/code_management/custom_code_reformatting.html).
